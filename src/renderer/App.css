@@ -1,0 +1,208 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: var(--bg-secondary);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.combat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.combat-grid label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.hp-block {
+  grid-column: span 2;
+}
+
+.hp-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hp-input input {
+  width: 80px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.abilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+.ability-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.ability-name {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.ability-score {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.ability-modifier {
+  font-size: 16px;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.spell-info {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.spell-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.spell-slot {
+  background: var(--bg-secondary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.spells-list h3 {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 16px 0 8px 0;
+}
+
+.spells-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.spells-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.inventory-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-list th,
+.inventory-list td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.inventory-list th {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.currency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 24px;
+  padding: 24px;
+}
+
+.welcome h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.welcome p {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.welcome-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.welcome-buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
